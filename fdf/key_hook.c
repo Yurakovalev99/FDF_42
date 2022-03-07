@@ -6,7 +6,7 @@
 /*   By: ysachiko <ysachiko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/06 15:35:05 by ysachiko          #+#    #+#             */
-/*   Updated: 2022/03/06 18:29:25 by ysachiko         ###   ########.fr       */
+/*   Updated: 2022/03/07 17:06:29 by ysachiko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int	deal_key(int key, t_fdf *data)
 		ft_free_data_struct(data);
 		exit(0);
 	}
-	draw(data);
+	draw(data, data->z_matrix);
 	return (0);
 }
 

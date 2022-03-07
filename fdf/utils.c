@@ -6,7 +6,7 @@
 /*   By: ysachiko <ysachiko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/26 16:48:10 by ysachiko          #+#    #+#             */
-/*   Updated: 2022/03/06 17:54:25 by ysachiko         ###   ########.fr       */
+/*   Updated: 2022/03/07 18:06:23 by ysachiko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,4 +74,17 @@ float	ft_max(float a, float b)
 		return (a);
 	else
 		return (b);
+}
+
+void	free_matrix(t_dots **z_matrix, int length)
+{
+	int	i;
+
+	i = 0;
+	while (i < length)
+	{
+		free(z_matrix[i]);
+		i++;
+	}
+	free(z_matrix);
 }

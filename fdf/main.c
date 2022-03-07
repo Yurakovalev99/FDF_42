@@ -6,7 +6,7 @@
 /*   By: ysachiko <ysachiko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/06 13:01:25 by ysachiko          #+#    #+#             */
-/*   Updated: 2022/03/06 18:43:46 by ysachiko         ###   ########.fr       */
+/*   Updated: 2022/03/07 20:15:18 by ysachiko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ int	main(int argc, char **argv)
 	}
 	first_init(data);
 	init_img(data);
-	draw(data);
+	draw(data, data->z_matrix);
 	mlx_key_hook(data->win_ptr, deal_key, data);
 	mlx_loop(data->mlx_ptr);
 	return (0);
